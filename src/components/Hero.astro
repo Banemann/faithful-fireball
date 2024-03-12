@@ -1,0 +1,58 @@
+---
+const {header, image, info} = Astro.props;
+---
+
+<div>
+    <img src={image} alt="Hero-image">
+    <div class="cloudbox">
+    <h2>{header}</h2>
+    <p>{info}</p>
+</div>
+</div>
+
+<style>
+
+    div{
+        color: black;
+        display: flex;
+    }
+  
+   img{
+    max-width: 100%;
+    margin-top: -1px
+   }
+
+   .cloudbox {
+    background-color: white;
+    opacity: 85%;
+    border-radius: 29px;
+    position: absolute;
+    top: 340px;
+    left: 300px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start;
+    padding: 6vh; 
+    gap: 2vh;
+}
+
+h2 {
+    background-color: #FFCC4A;
+    border-radius: 50px;
+    padding: 0.25vh 2vh;
+    font-size: 16px;
+   
+    
+}
+
+p {
+    font-size: 50px;
+    font-weight: bold;
+    max-width: 700px;
+}
+
+
+   
+
+
+</style>

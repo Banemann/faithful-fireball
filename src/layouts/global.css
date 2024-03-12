@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+.active img{
+    display: none;
+}
+
+.active {
+    padding-left: 2rem;
+    background-image: url('../public/dot.png'); 
+    background-repeat: no-repeat;
+    background-position: left center; 
+}
