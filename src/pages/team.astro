@@ -1,5 +1,6 @@
 ---
 import Hero from '../components/Hero.astro';
+import Profiles from '../components/Profiles.astro';
 import Header from '../components/Header.astro';
 import '../layouts/global.css';
 
@@ -16,7 +17,9 @@ import '../layouts/global.css';
 	<main>
 		<Header></Header>
 		
-		<Hero header="TEAM" image="public/teamimg.png" info="The Consultors"/>
+		<Hero header="TEAM" image="/public/teamimg.png" info="The Consultors"/>
+
+		<Profiles name="Sarah Jasmine" image="../public/sarah.png" title="CEO at Company"/>
 		
 		
 			
