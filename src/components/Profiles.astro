@@ -1,0 +1,35 @@
+---
+const {name, image, title} = Astro.props;
+---
+
+<div>
+    <img src={image} alt="Hero-image">
+    <h3>{title}</h3>
+    <div>
+    <h2>{name}</h2>
+    <p>Leverage agile frameworks to provide a robust synopsis for high level overviews.</p>
+    <img src="../public/profilesome.png" alt="">
+</div>
+</div>
+
+<style>
+
+    div{
+        display: flex;
+        color: black;
+        font-size: 16px;
+    }
+  
+   img{
+    max-width: 100%;
+   }
+
+   h2{
+    font-size: 30px;
+   }
+
+h3 {
+    color: white;
+}
+
+</style>
