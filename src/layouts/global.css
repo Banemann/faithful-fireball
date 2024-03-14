@@ -21,13 +21,59 @@
 
 
 
-.active img{
-    display: none;
-}
 
-.active {
-    padding-left: 2rem;
-    background-image: url('../public/dot.png'); 
-    background-repeat: no-repeat;
-    background-position: left center; 
+@media only screen and (max-width: 1350px) {
+
+    .header{
+        display: none;
+    }
+    
+    .ourvisiondiv, .growingdiv {
+        flex-direction: column;
+        padding: 5% 10%; 
+    }
+
+    .ourvisiondiv h2, .growingdiv h2 {
+        font-size: 35px; 
+    }
+
+    .ticktext, .teamtext {
+        flex-direction: column; 
+    }
+
+    .grid_1-1-1 {
+        display: grid;
+        grid-template-columns: 1fr; 
+        gap: 20px; 
+        justify-items: center; 
+        align-items: center; 
+    }
+    
+    .grid_1-1-1 > * { 
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        text-align: center;
+    }
+
+    .touchbuttondiv img, .ctaabout img, .ctateam img {
+        width: 80%; 
+        margin: 0 auto; 
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .navbar, .blackbar {
+        flex-direction: column;
+        text-align: center; 
+    }
+
+    .profileimg, .profileinfo {
+        text-align: center; 
+    }
+
+
 }

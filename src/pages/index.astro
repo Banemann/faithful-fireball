@@ -16,7 +16,7 @@ import '../layouts/global.css';
   </head>
 
 	<main>
-		<Header></Header>
+		<Header class="header"></Header>
 		
 		<Hero header="SERVICES" image="/aboutimg.png" info="Creative Services For Boost Your Business Growth"/>
 
@@ -261,6 +261,60 @@ background-color: #F5F5F5;
   justify-content: center;
   align-items: center;
   padding: 8% 0;
+}
+
+
+@media only screen and (max-width: 1350px) {
+
+*{
+    display: grid;
+    grid-template-columns: 1fr;
+
+    
+}
+
+.touchbuttondiv{
+  width:  30%;
+}
+
+.growingdiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.growingtext{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.teamtext{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.visiontext{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.touchbuttondiv img{
+  padding-top: 5%;
+  padding-bottom: 15%;
+}
+
+div:has(img){
+  align-items: center;
+}
+
 }
 
 </style>
