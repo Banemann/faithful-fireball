@@ -2,6 +2,7 @@
 import Hero from '../components/Hero.astro';
 import Profiles from '../components/Profiles.astro';
 import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 import '../layouts/global.css';
 
 ---
@@ -16,13 +17,38 @@ import '../layouts/global.css';
 
 	<main>
 		<Header></Header>
-		
-		<Hero header="TEAM" image="/public/teamimg.png" info="The Consultors"/>
 
-		<Profiles name="Sarah Jasmine" image="../public/sarah.png" title="CEO at Company"/>
-		
-		
-			
+		<Hero header="TEAM" image="/teamimg.png" info="The Consultors"/>
+
+    <h2 class="meetteamh2">Meet Our Great Team</h2>
+    <div class="meetteam">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. enim ad minim veniam, quis nostrud exercitation.</p>
+      <button>Join our team</button>
+    </div>
+
+<div class="centering">
+<div class="grid_1-1-1">
+		<Profiles name="Sarah Jasmine" image="/sarah.png" title="CEO at Company"/>
+		<Profiles name="Sarah Jasmine" image="/john.png" title="Manager"/>
+		<Profiles name="Sarah Jasmine" image="/daisy.jpg" title="CEO at Company"/>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+<div class="grid_1-1-1">
+		<Profiles name="Sarah Jasmine" image="/maya.png" title="CEO at Company"/>
+		<Profiles name="Sarah Jasmine" image="/ryan.png" title="CEO at Company"/>
+		<Profiles name="Sarah Jasmine" image="/lilly.png" title="CEO at Company"/>
+  </div>
+</div>
+
+<div class="ctateam">
+<img src="/CTAteam.png" alt="Call to action - Enter your email and we will contact you">
+</div>	
+
+<Footer></Footer>
 		
 	</main>
 
@@ -32,4 +58,51 @@ import '../layouts/global.css';
 .info{
 	color: red;
 }
+
+.meetteamh2{
+  font-size: 45px;
+  padding: 0 18%;
+  margin-top: 7%;
+}
+
+.meetteam p{
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.meetteam button{
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  white-space: nowrap;
+  font-size: 18px;
+  width: 310px;
+  height: 60px;
+}
+
+.meetteam{
+  padding: 0 18%;
+  display: flex;
+  gap: 35%;
+  padding-top: .5%;
+  margin-bottom: 2%;
+  align-items: center;
+}
+
+.centering{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ctateam{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10%;
+}
+
+
+
 </style>
