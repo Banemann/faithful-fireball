@@ -1,5 +1,6 @@
 ---
 import Hero from '../components/Hero.astro';
+import Profiles from '../components/Profiles.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import '../layouts/global.css';
@@ -18,9 +19,78 @@ import '../layouts/global.css';
 		<Header></Header>
 		
 		<Hero header="SERVICES" image="/aboutimg.png" info="Creative Services For Boost Your Business Growth"/>
-		
-		
-			
+
+    <div class="ourvisiondiv">
+      <div class="visiontext">
+      <h3 class="ourvision">OUR VISION</h3>
+      <h2>Turn your ideas into reality.</h2>
+      <p>Capitalize on low hanging fruit to identify a ballpark value added activity beta test. Override the digital divide with additional from DevOps.</p>
+
+      <div class="ticktext">
+      <img src="/tick.png" alt="A tick">
+      <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day.</p>
+    </div>
+      
+      <div class="ticktext">
+        <img src="/tick.png" alt="A tick">
+      <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test override the digital.</p>
+    </div> 
+  </div>
+
+    <div>
+      <img src="/aboutimg2.png" alt="Image of people working together">
+    </div>
+    </div>
+
+    <div class="counterdiv">
+      <img src="/counter.png" alt="A counter that shows stats of the company">
+    </div>
+
+
+
+    <div class="growingdiv">
+
+      <div class="growingtext">
+      <h3 class="growing">GROWING WITH OUR CLIENTS</h3>
+      <h2>Our core values & principles</h2>
+      <p>Capitalize on low hanging fruit to identify a ballpark value added activity beta test. Override the digital divide with additional from DevOps.</p>
+</div>
+      
+    <div class="touchbuttondiv">
+      <img src="/touchbutton.png" alt="Get in touch button">
+    </div>
+      
+    </div>
+
+    <div class="aboutcontentdiv">
+      <img src="/aboutcontent.png" alt="">
+    </div>
+
+    <div class="aboutviddiv">
+      <img src="/aboutvideo.png" alt="Video of team working together">
+    </div>
+    
+    
+    <div class="ourteamdiv">
+      <div class="teamtext">
+      <h3 class="ourteam">OUR TEAM</h3>
+      <h2>We champion the bold to achieve the extraordinary</h2>
+      <p>Ippsum is the result of synergy between our teams and our customers. Our company culture is focused on excellent productivity, customer satisfaction, respect for team.</p>
+		</div>
+  </div>
+
+  <div class="centering">		
+  <div class="grid_1-1-1">
+		<Profiles name="Sarah Jasmine" image="/sarah.png" title="CEO at Company"/>
+		<Profiles name="John Carter" image="/john.png" title="Manager"/>
+		<Profiles name="Daisy Stella" image="/daisy.jpg" title="CEO at Company"/>
+  </div>
+</div>
+
+<div class="ctaabout">
+  <img src="/CTAabout.png" alt="Call us!">
+</div>
+
 		<Footer></Footer>
 	</main>
 
@@ -30,4 +100,167 @@ import '../layouts/global.css';
 .info{
 	color: red;
 }
+
+.ourvisiondiv{
+  display: flex;
+  gap: 13vh;
+  justify-content: center;
+  padding: 5% 15%;
+}
+
+.ourvisiondiv h2{
+  font-size: 45px;
+}
+
+.ourvision{
+    color: white;
+    background-color: #4EAF4E;
+    border-radius: 50px;
+    font-size: 16px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    padding: .2%;
+    width: 120px;
+}
+
+.visiontext p{
+  line-height: 140%;
+}
+
+.visiontext p, h2, h3{
+  padding: 1% 0;
+  width: 90%;
+}
+
+.ticktext{
+  display: flex;
+  gap: 3vh;
+  align-items: center;
+}
+
+.ticktext img{
+  width: auto;
+  height: 50%;
+  
+}
+
+.counterdiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8%;
+}
+
+
+.growingdiv{
+  display: flex;
+  gap: 13vh;
+  justify-content: center;
+  padding: 5% 15%;
+  padding-bottom: 2%;
+ 
+  background-color: #F5F5F5;
+}
+
+.growing{
+    color: black;
+    background-color: #FFCC4A;
+    border-radius: 50px;
+    font-size: 16px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    padding: .5%;
+    width: 300px;
+}
+
+.growingdiv h2{
+  font-size: 45px;
+}
+
+.growingtext p{
+  line-height: 140%;
+}
+
+.growingtext p, h2, h3{
+  padding: 1% 0;
+  width: 65%;
+}
+
+.aboutcontentdiv{
+  background-color: #F5F5F5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 8%;
+}
+
+.touchbuttondiv img{
+  padding-top: 58%;
+}
+
+.touchbuttondiv:hover{
+  cursor: pointer;
+}
+
+.aboutviddiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8% 0;
+}
+
+
+.ourteamdiv{
+  display: flex;
+background-color: #F5F5F5;
+  justify-content: center;
+  padding: 1% 5%;
+  padding-left: 0;
+  padding-top: 8%;
+}
+
+.ourteamdiv h2{
+  font-size: 45px;
+}
+
+.ourteam{
+    color: black;
+    background-color: #FFCC4A;
+    border-radius: 50px;
+    font-size: 16px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    padding: .2%;
+    width: 120px;
+}
+
+.teamtext p{
+  line-height: 140%;
+}
+
+.teamtext p, h2, h3{
+  padding: 1% 0;
+  width: 50%;
+}
+
+.grid_1-1-1{
+  gap: 6vh;
+}
+
+.centering{
+  background-color: #F5F5F5;
+  padding-bottom: 8%;
+  padding-top: 1%;
+}
+
+.ctaabout{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8% 0;
+}
+
 </style>
